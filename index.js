@@ -2,8 +2,8 @@ const express = require('express');
 const App = express();
 const PORT = 3000;
 
-App.get('/', function (req, res) {
-  res.send('Home page');
+App.get('/about', function (req, res) {
+  res.send('About page');
 });
 
 App.listen(PORT, () => {
